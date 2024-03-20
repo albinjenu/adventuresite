@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    /* Custom styles for the image and form */
+    .image-form-container {
+        margin-top: 20px; /* Add space below navbar */
+        background-color: #fff; /* White background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-item img {
+        height: 400px; /* Adjust carousel image height */
+        object-fit: cover; /* Ensure images cover entire area */
+        border-radius: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        transition: all 0.3s ease; /* Smooth transition for form inputs */
+    }
+
+    .btn-primary {
+        background-color: #fb641b; /* Flipkart orange */
+        border-color: #fb641b;
+        padding: 12px 24px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .btn-primary:hover {
+        background-color: #f3320b; /* Darker shade on hover */
+        border-color: #f3320b;
+    }
+
+    .package-details h2 {
+        color: #0068b3; /* Figma blue */
+        font-size: 28px;
+        margin-bottom: 15px;
+
+        text-transform: uppercase;
+    }
+
+    .package-details p {
+        color: #333; /* Dark text color */
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .package-details .price {
+        color: #27ae60; /* Green for price */
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .form-group label {
+        color: #555; /* Medium gray for labels */
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+</style>
+
+<div class="container" style="box-shadow:  0 2px 4px rgba(111, 66, 193, 5.4);">
+    <div class="image-form-container" data-aos="fade-up"
+     data-aos-duration="800">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Carousel -->
+                <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-tilt data-tilt-scale="1.1">
+                            <img src="{{ a.image.url }}" class="d-block w-100" alt="Figma Image">
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                    <!-- Add carousel controls here -->
+                </div>
+            </div>
+            <div class="col-md-6" >
+                <!-- Form -->
+                <div class="package-details">
+                    <h2>{{ a.name }}</h2>
+                    <p class="description">{{ a.description }}</p>
+                    <p class="price">Price: {{ a.price }}</p>
+                    <form method="post" action="{% url 'cart:add_to_cart' a.name %}">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="selected_date">Select a date:</label>
+                            <input type="date" id="selected_date" name="selected_date" class="form-control" min="{% now 'Y-m-d' %}"
+                                   max="{{ max_date }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="total_persons">Total persons:</label>
+                            <input type="number" id="total_persons" name="total_persons" class="form-control" min="1" value="1" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add to Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

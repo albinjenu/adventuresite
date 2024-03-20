@@ -1,0 +1,663 @@
+
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="{% static 'assests/img/fav.png' %}">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Adventure</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="{% static 'assests/css/linearicons.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/font-awesome.min.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/bootstrap.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/magnific-popup.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/animate.min.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/owl.carousel.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/main.css' %}">
+
+
+		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+		</head>
+		<body>
+
+<!--		<header>-->
+<!--    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-1">-->
+<!--        <div class="container-fluid">-->
+<!--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+<!--            <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--                <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link active" aria-current="page" href="{% url 'app1:home' %}">Home</a>-->
+<!--                    </li>-->
+
+<!--					<li class="nav-item">-->
+<!--                        <a class="nav-link active" aria-current="page" href="{% url 'app1:home' %}">Home</a>-->
+<!--                    </li>-->
+
+
+<!--                    <li class="nav-item dropdown">-->
+<!--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">All Category</a>-->
+<!--                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                            <li><a class="dropdown-item" href=""></a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link active" aria-current="page" href="{% url 'UserAuthentication:register' %}">Register</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link active" aria-current="page" href="{% url 'UserAuthentication:login' %}">Login</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link active" aria-current="page" href="{% url 'UserAuthentication:logout' %}">Logout</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <form class="form-inline">-->
+<!--                    <div class="input-group">-->
+<!--                        <input class="form-control" type="search" placeholder="Search your products" aria-label="Search">-->
+<!--                        <div class="input-group-append">-->
+<!--                            <button class="attractive-btn" type="submit">Search</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--</header>-->
+
+
+
+
+
+
+
+			<!-- start banner Area -->
+
+				<!-- Start Header Area -->
+
+						<div class="container" >
+							  <a class="navbar-brand" href="home.html">
+							  	<img src="{% static 'assests/img/logo.png' %}" alt="">
+							  </a>
+							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							    <span class="text-white lnr lnr-menu"></span>
+							  </button>
+
+							  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent" >
+							    <ul class="navbar-nav">
+									<li><a href="#home">Home</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="#secvice">Service</a></li>
+									<li><a href="#gallery">Gallery</a></li>
+									<li><a href="#faq">Faq</a></li>
+									<li><a href="#contact">Contact</a></li>
+									<!-- Dropdown -->
+								    <li class="dropdown">
+								      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+								        Pages
+								      </a>
+								      <div class="dropdown-menu">
+								        <a class="dropdown-item" href="generic.html">Generic</a>
+								        <a class="dropdown-item" href="elements.html">Elements</a>
+								      </div>
+								    </li>
+							    </ul>
+							  </div>
+						</div>
+					</nav>
+				</header>
+				<!-- End Header Area -->
+			</section>
+
+			<section class="default-banner active-blog-slider">
+					<div class="item-slider relative" style="background: url(static/assests/img/slider1.jpg);background-size: cover;">
+						<div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+						<div class="container">
+							<div class="row fullscreen justify-content-center align-items-center">
+								<div class="col-md-10 col-12">
+									<div class="banner-content text-center">
+										<h4 class="text-white mb-20 text-uppercase">Discover the Colorful World</h4>
+										<h1 class="text-uppercase text-white">New Adventure</h1>
+										<p class="text-white">Embark on thrilling adventures in breathtaking landscapes, where every moment is filled with excitement and discovery.<br>
+											Join us as we explore the great outdoors and create unforgettable memories together.</p>
+										<a href="{% url 'app1:packages' %}" class="text-uppercase header-btn" style="text-decoration: none;">Discover Now</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="item-slider relative" style="background: url(static/assests/img/slider2.jpg);background-size: cover;">
+						<div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+						<div class="container">
+							<div class="row fullscreen justify-content-center align-items-center">
+								<div class="col-md-10 col-12">
+									<div class="banner-content text-center">
+										<h4 class="text-white mb-20 text-uppercase">Discover the Colorful Adventure</h4>
+										<h1 class="text-uppercase text-white">New Trip</h1>
+										<p class="text-white">Discover exhilarating journeys through rugged terrains and untamed wilderness, where every step brings you closer to nature's wonders.<br>
+											Unleash your adventurous spirit and immerse yourself in unforgettable experiences.</p>
+										<a href="{% url 'app1:packages' %}" class="text-uppercase header-btn" style="text-decoration: none;" >Discover Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item-slider relative" style="background: url(static/assests/img/slider3.jpg);background-size: cover;">
+						<div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+						<div class="container">
+							<div class="row fullscreen justify-content-center align-items-center">
+								<div class="col-md-10 col-12">
+									<div class="banner-content text-center">
+										<h4 class="text-white mb-20 text-uppercase">Discover the Colorful World</h4>
+										<h1 class="text-uppercase text-white">New Experience</h1>
+										<p class="text-white">Experience adrenaline-pumping escapades in mesmerizing settings,
+											where the call of the wild beckons you to embrace the thrill of the unknown. <br>
+											Venture into uncharted territories and let your curiosity guide you on epic adventures.</p>
+										<a href="{% url 'app1:packages' %}" class="text-uppercase header-btn" style="text-decoration: none;" >Discover Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Start about Area -->
+			<section class="section-gap info-area" id="about">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-40 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Why Choose Us Your Adventure Partner</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>
+					<div class="single-info row mt-40">
+						<div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
+							<div class="info-thumb">
+								<img src="{% static 'assests/img/ad1.jpeg' %}" class="img-fluid" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 no-padding info-rigth">
+							<div class="info-content">
+								<h2 class="pb-30">Escape the Ordinary <br>
+								Pursue adventure, <br>
+								Embrace the extraordinary</h2>
+								<p>
+									Venturing into the unknown, seeking thrill in untamed landscapes,
+									adventurers face challenges with unwavering determination. While some may view risks as reckless, adventurers embrace them as opportunities for growth and self-discovery. In the realm of adventure, every step taken and every obstacle overcome fuels the spirit of exploration. That's why it's essential that, as adventurers, we continue to push boundaries,
+									defy limits, and inspire others to embark on their own epic journeys.
+								</p>
+								<br>
+								<p>
+									In the realm of adventure, risks are not merely shrugged off as "part of the game." Every challenge demands respect and a higher standard of conduct. Just as women face heightened expectations in professional settings, adventurers must uphold integrity and accountability in their pursuits. It's imperative that, as adventurers, we cultivate a culture of respect, responsibility, and inclusivity.
+								</p>
+
+
+								</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End about Area -->
+
+
+			<!-- Start project Area -->
+			<section class="project-area section-gap" id="project">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-30 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Adventure Awaits: Explore Our Latest Expeditions</h1>
+								<p>Embark on thrilling adventures with us, where every moment is filled with excitement and discovery.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center d-flex">
+						<div class="active-works-carousel mt-40 col-lg-8">
+							<div class="item">
+								<img class="img-fluid" src="{% static 'assests/img/rr5.jpg' %}" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Discover Thrilling Expeditions: Captivating Vector Illustrations</h6>
+									<p>Adventure bookings are uniquely thrilling in experience, and the diverse landscapes they unveil <br> allow travelers to embrace nature's wonders.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="{% static 'assests/img/rr1.jpg' %}" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Embark on Epic Quests: Illustrated Adventures Await</h6>
+									<p>Embark on an adventure journey, where every twist and turn uncovers new excitement, <br> allowing travelers to immerse themselves in adrenaline-fueled escapades.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="{% static 'assests/img/rr2.jpg' %}" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Dive into Adventure: Vibrant Vector Experiences</h6>
+									<p>Adventure seekers crave the rush of exploring uncharted territories, <br> where every step forward brings them closer to exhilarating discoveries.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="{% static 'assests/img/rr3.jpg' %}" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Thrilling Adventures Await: Illustrated Experiences</h6>
+									<p>Experience the thrill of adventure bookings, where each destination promises <br> an unforgettable journey filled with heart-pounding experiences.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="{% static 'assests/img/rr4.avif' %}" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Explore Your Next Adventure: Illustrated Journeys Await</h6>
+									<p>Adventure bookings offer a gateway to adrenaline-fueled experiences, <br> where the spirit of exploration leads to unforgettable memories.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End project Area -->
+
+
+			<!-- Start feature Area -->
+			<section class="feature-area section-gap"  id="secvice">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Some Features that Made us Unique</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature mb-30">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-user"></span>
+									<h4>Expert Technicians</h4>
+								</div>
+								<p>
+									As technology advances, adventure booking becomes more accessible, offering thrilling experiences to travelers worldwide.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature mb-30">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-license"></span>
+									<h4>Professional Service</a></h4>
+								</div>
+								<p>
+									As adventurers seek unforgettable experiences, our professional service ensures seamless journeys and unforgettable memories.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature mb-30">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-phone"></span>
+									<h4>Great Support</a></h4>
+								</div>
+								<p>
+									Experience great support every step of your adventure, ensuring peace of mind and unforgettable moments.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-rocket"></span>
+									<h4>Technical Skills</a></h4>
+								</div>
+								<p>
+									Benefit from our technical skills to navigate through every challenge and enhance your adventure experience
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-diamond"></span>
+									<h4>Highly Recomended</a></h4>
+								</div>
+								<p>
+									Highly recommended for unparalleled adventure experiences, ensuring memories that last a lifetime.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-bubble"></span>
+									<h4>Positive Reviews</a></h4>
+								</div>
+								<p>
+									Positive reviews affirm our commitment to exceptional adventure services, fostering trust and satisfaction.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End feature Area -->
+
+
+			<!-- Start gallery Area -->
+			<section class="gallery-area" id="gallery">
+				<div class="container-fluid">
+					<div class="row no-padding">
+						<div class="active-gallery">
+							<div class="item single-gallery">
+								<img src="{% static 'assests/img/V1.jpg' %}" alt="">
+							</div>
+							<div class="item single-gallery">
+								<img src="{% static 'assests/img/1.jpg' %}" alt="">
+							</div>
+							<div class="item single-gallery">
+								<img src="{% static 'assests/img/2.jpg' %}" alt="">
+							</div>
+							<div class="item single-gallery">
+								<img src="{% static 'assests/img/4.jpg' %}" alt="">
+							</div>
+							<div class="item single-gallery">
+								<img src="{% static 'assests/img/5.jpg' %}" alt="">
+							</div>
+							<div class="item single-gallery">
+								<img src="{% static 'assests/img/6.jpg' %}" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End gallery Area -->
+
+
+
+
+			<!-- Start faq Area -->
+			<section class="faq-area section-gap" id="faq">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Frequently Asked Questions</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row d-flex align-items-center">
+						<div class="counter-left col-lg-3 col-md-3">
+							<div class="single-facts">
+								<h2 class="counter">5962</h2>
+								<p>Exploration Milestones</p>
+							</div>
+							<div class="single-facts">
+								<h2 class="counter">2394</h2>
+								<p>New Branchs</p>
+							</div>
+							<div class="single-facts">
+								<h2 class="counter">1439</h2>
+								<p>Explore Our Extensive Hotel Partnerships</p>
+							</div>
+							<div class="single-facts">
+								<h2 class="counter">156 </h2>
+								<p>Operating in Over 100+ Countries</p>
+							</div>
+						</div>
+						<div class="faq-content col-lg-9 col-md-9">
+							<div class="single-faq">
+								<h2 class="text-uppercase">
+									"Are Your Adventures Tailored to Every Screen?"
+								</h2>
+								<p>
+									Despite advancements in adventure booking platforms, a double standard persists in screen optimization. While some prioritize specific devices, others overlook universal accessibility. Tailoring adventures to every screen is crucial for inclusivity and user satisfaction
+								</p>
+							</div>
+							<div class="single-faq">
+								<h2 class="text-uppercase">
+									"Are All the Features Included as Stated?"
+								</h2>
+								<p>
+									In the realm of  booking, clarity and transparency are paramount. Customers seek assurance that the promised features and amenities are indeed included in their experience
+								</p>
+							</div>
+							<div class="single-faq">
+								<h2 class="text-uppercase">
+									"Are Your Adventure Experiences Truly Unique?"
+								</h2>
+								<p>
+									Absolutely! Our adventure booking platform prides itself on offering unparalleled and truly unique experiences for every adventurer. We handpick each adventure, ensuring that they are not only thrilling but also distinctive,
+									allowing you to explore hidden gems.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End faq Area -->
+
+
+			<!-- Start Video Area -->
+			<section class="video-area pt-40 pb-40">
+				<div ></div>
+				<div class="container">
+					<div class="video-content">
+						<a href="https://www.youtube.com/watch?v=8K4b7rjYOn4" class="play-btn"><img src="{% static 'assests/img/play-btn.png' %}" alt=""></a>
+						<div class="video-desc">
+							<h3 class="h2 text-white text-uppercase">Being unique is the preference</h3>
+							<h4 class="text-white">Youtube video will appear in popover</h4>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Start Video Area -->
+
+
+			<!-- Start logo Area -->
+			<section class="logo-area">
+				<div class="container">
+					<div class="row">
+
+					</div>
+				</div>
+			</section>
+			<!-- End logo Area -->
+
+
+			<!-- start contact Area -->
+			<section class="contact-area section-gap" id="contact">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">If you need, Just drop us a line</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>
+					<form class="form-area " id="myForm"  method="POST" class="contact-form text-right">
+						 {% csrf_token %}
+						<div class="row">
+						<div class="col-lg-6 form-group">
+							<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
+
+							<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
+
+							<input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control" required="" type="text">
+						</div>
+						<div class="col-lg-6 form-group">
+							<textarea class="common-textarea mt-10 form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+							<button type="submit" class="primary-btn mt-20">Send Message<span class="lnr lnr-arrow-right"></span></button>
+							<div class="alert-msg">
+						</div>
+						</div></div>
+					</form>
+
+				</div>
+			</section>
+			<!-- end contact Area -->
+
+			<!-- start footer Area -->
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-sm-6" style="text-light;">
+							<div class="single-footer-widget" >
+								<h6 ><a class="nav-link active" aria-current="page" href="{% url 'app1:about' %}"
+									   style="color:white;">About Us</a></h6>
+
+
+								<p style="color: white;">
+									At RishiCost, we're dedicated to providing top-quality adventure experiences in Rishikesh. Join us for unforgettable journeys and discover the beauty of the Himalayas
+								</p>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            		<p style="color: white;" class="footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | </i> by Rishi Cost.com <a href="https://colorlib.com" target="_blank"></a></p>
+            		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</div>
+						</div>
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Newsletter</h6>
+								<p style="color: white;">Stay update with our latest</p>
+								<div class="" id="mc_embed_signup">
+
+										<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+
+										<div class="d-flex flex-row">
+
+											<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+
+
+				                            	<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+				                            	<div style="position: absolute; left: -5000px;">
+													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+												</div>
+
+											<!-- <div class="col-lg-4 col-md-4">
+												<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
+											</div>  -->
+										</div>
+										<div class="info"></div>
+										</form>
+								</div>
+								</div>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+							<div class="single-footer-widget">
+								<h6>Follow Us</h6>
+								<p style="color: white;">Let us be social</p>
+								<div class="footer-social d-flex align-items-center">
+									<a href="https://www.facebook.com/share/zpq6M9SfiVZRGA68/?mibextid=qi2Omg"><i class="fa fa-facebook"></i></a>
+									<a href="https://x.com/RishikeshTour?s=20"><i class="fa-brands fa-x-twitter"></i></a>
+									<a href="https://www.instagram.com/rishikesh_rafting_and_camping?igsh=dDlrOHVsN3llOHJu"><i class="fab fa-instagram"></i></a>
+									<a href="https://wa.link/lu3xlu"><i class="fa fa-whatsapp"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->
+
+			<script src="{% static 'assests/js/vendor/jquery-2.2.4.min.js' %}"></script>
+			<script src="{% static 'assests/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js' %}" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+			<script src="{% static 'assests/js/vendor/bootstrap.min.js' %}"></script>
+			<script src="{% static 'assests/js/jquery.ajaxchimp.min.js' %}"></script>
+			<script src="{% static 'assests/js/jquery.magnific-popup.min.js' %}"></script>
+			<script src="{% static 'assests/js/owl.carousel.min.js' %}"></script>
+			<script src="{% static 'assests/js/jquery.sticky.js' %}"></script>
+			<script src="{% static 'assests/js/slick.js' %}"></script>
+			<script src="{% static 'assests/js/jquery.counterup.min.js' %}"></script>
+			<script src="{% static 'assests/js/waypoints.min.js' %}"></script>
+			<script src="{% static 'assests/js/main.js' %}"></script>
+
+
+	<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+            var formData = new FormData(this);
+
+            fetch('/', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-CSRFToken': getCookie('csrftoken')
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Message Sent!',
+                        text: 'Thank you for your message.',
+                        showConfirmButton: false,
+                        timer: 2000
+                    }).then(() => {
+                        location.reload(); // Reload the page after showing the success message
+                    });
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong!',
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!',
+                });
+            });
+        });
+
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    });
+</script>
+
+
+		</body>
+	</html>
+
+
+	{% endblock %}

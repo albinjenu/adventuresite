@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'assests/mycss/style.css' %}">
+
+
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-SZXy7Tp6MMg5n+R/Xp5I2+QDrZqgKYgVftK+74V1u4eckRZBgxk4s0F7F" crossorigin="anonymous">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="{% static 'assests/css/linearicons.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/font-awesome.min.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/bootstrap.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/magnific-popup.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/animate.min.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/owl.carousel.css' %}">
+			<link rel="stylesheet" href="{% static 'assests/css/main.css' %}">
+
+
+		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-1" style=" box-shadow: 0 2px 4px rgba(0, 0, 0, 4.1);" >
+        <div class="container-fluid" >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+
+
+                     <li class="nav-item">
+                         <img src="{% static 'images/rc.png' %}" alt="Your Logo" width="50" height="50">
+                    </li>
+
+
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link active" aria-current="page" href="{% url 'app1:about' %}">About Us</a>-->
+<!--                    </li>-->
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'app1:home' %}">Home</a>
+                    </li>
+
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'app1:packages' %}">Packages</a>
+                    </li>
+
+<!--                    <li class="nav-item dropdown">-->
+<!--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">All Category</a>-->
+<!--                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                            <li><a class="dropdown-item" href=""></a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+
+
+
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link active" aria-current="page" href="{% url 'UserAuthentication:register' %}">Register</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link active" aria-current="page" href="{% url 'UserAuthentication:login' %}">Login</a>-->
+<!--                    </li>-->
+
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link active" aria-current="page" href="{% url 'UserAuthentication:logout' %}">Logout</a>-->
+<!--                    </li>-->
+
+
+
+                    {% if not user.is_authenticated %}
+
+               <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+
+
+<i class="fas fa-user" style="color: orange;"> </i> Account
+
+
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="display: block;">
+        <a class="dropdown-item" href="{% url 'UserAuthentication:register' %}" style="color: black;">
+            <i class="bi bi-person-plus" style="color: green;"> </i> Register</a>
+        <a class="dropdown-item" href="{% url 'UserAuthentication:login' %}" style="color: black;">
+            <i class="bi bi-box-arrow-in-right"style="color: blue;"></i> Login</a>
+    </div>
+            </li>
+
+
+                        {% endif %}
+
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'app1:about' %}">About Us</a>
+                    </li>
+
+
+
+                        {% if user.is_authenticated %}
+
+
+                    <a><i class="fas fa-user" style="color: #6f42c1;"> </i> {{ user.first_name }}</a>
+
+
+                    <a class="nav-link" href="{% url 'cart:cart_view' %}">
+                        <i class="fas fa-shopping-cart" style="color: #6f42c1;"></i> <!-- Replace this with the appropriate icon class -->
+                    </a>
+                        {% endif %}
+
+        </div>
+      </li>
+
+                </ul>
+<!--                <form class="form-inline">-->
+<!--                    <div class="input-group">-->
+<!--                        <input class="form-control" type="search" placeholder="Search your products" aria-label="Search">-->
+<!--                        <div class="input-group-append">-->
+<!--                            <button class="attractive-btn" type="submit">Search</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </form>-->
+
+                    <form class="form-inline" method="POST" action="{% url 'search:searchresult' %}">
+        {% csrf_token %}
+      <div class="input-group">
+        <input class="form-control" type="search" name="q" placeholder="Search your packages" aria-label="Search">
+        <div class="input-group-append">
+          <button class="attractive-btn" type="submit">Search</button>
+        </div>
+      </div>
+
+      </form>
+
+
+            </div>
+        </div>
+
+                        {% if user.is_authenticated %}
+
+                         <a class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'UserAuthentication:logout' %}">Logout</a>
+                    </a>
+
+                        {% endif %}
+
+
+
+
+
+
+                    <a class="nav-link" href="{% url 'app1:review' %}">
+                        <i class="fas fa-star-half-alt thank-you-icon-review"></i>
+                    </a>
+
+
+
+        <div>
+
+
+            <!-- Button to toggle the off-canvas menu -->
+
+            <!-- Notification icon -->
+ <button style="color:#6f42c1;border-radius: 50%; width: 40px; height: 40px; border: 2px solid #6f42c1;"
+         type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+         aria-controls="offcanvasRight" >
+        <i class="fas fa-bell"></i>
+    </button>
+
+    <!-- Off-canvas menu -->
+ <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" >
+    <div class="offcanvas-header bg-info text-white" >
+
+        <h5 id="offcanvasRightLabel"  >Notifications</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" >
+        {% if orders %}
+            <!-- Display notifications -->
+            <ul class="list-group list-group-flush"  >
+                {% for i in orders %}
+                    <li class="list-group-item border border-primary rounded" >
+                        <!-- Display notification details -->
+                        <h5 class="mb-2">{{ i.package.name }}</h5>
+                        <p class="mb-2">Start Date: {{ i.selected_date }}</p>
+                        <p>Subtotal: {{ i.subtotal }}</p>
+                        <p>Payment Status: {{ i.order_status }}</p>
+                        <!-- Conditionally display the "Rate your package" link -->
+                        {% if i.is_completed %}
+                            {% if i.user_has_rated %}
+                                 <i class="fas fa-check-circle" style="color:green;"></i>
+                        <span  style="color:green;">You have already rated this package.</span>
+
+                            {% else %}
+                                <i class="fas fa-star" style="color:#FFD700;"></i>
+                                <span ><a href="{% url 'app1:rating' package_name=i.package.name %}"
+                                style="color:blue; text-decoration:none;">
+                                    Rate your {{ i.package.name }} experience</a></span>
+                            {% endif %}
+                        {% else %}
+                            <i class="fas fa-clock" style="color:red;"></i>
+                            <span style="color:red;">Package completion pending.</span>
+                        {% endif %}
+
+                        <br><br>
+                        <a class="nav-link" href="{% url 'cart:orderview' %}"  style="display: flex; justify-content: flex-end;">
+
+                             <i class="fas fa-receipt" style="font-size: 17px; color: #6f42c1;"></i>
+                            <i class="fas fa-arrow-right" style="font-size: 17px; color: #6f42c1;"></i>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <!-- Display message if there are no notifications -->
+            <p>No notifications</p>
+        {% endif %}
+    </div>
+</div>
+
+</div>
+
+
+
+
+        </div>
+
+
+
+
+    </nav>
+</header>
+
+{% block content %}
+{% endblock %}
+
+<script src="{% static 'assests/mycss/vanilla-tilt.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoJtKh7z7lGz7fuP4F8nfdFvAOA6Gg/z6Y5J6XqqyGXYM2ntXU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kD4Ck5BdPtF+to8xMp9Mvc" crossorigin="anonymous"></script>
+</body>
+
+<script>
+  AOS.init();
+</script>
+
+
+</html>
